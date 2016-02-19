@@ -20,7 +20,7 @@
         {
             // Arrange
             $test_Count = new Count;
-            $sentence = "What a big fish.";
+            $sentence = "The fish are jumping.";
             $find = "fish";
 
             // Act
@@ -41,6 +41,19 @@
 
             // Assert
             $this->assertEquals( 4, $result);
+        }
+        function test_count_partial_word()
+        {
+            // Arrange
+            $test_Count = new Count;
+            $sentence = "One fish, two fish, red fisherman, blue fisherman.";
+            $find = "fish";
+
+            // Act
+            $result = $test_Count->countWord($sentence, $find);
+
+            // Assert
+            $this->assertEquals( 2, $result);
         }
       }
 ?>

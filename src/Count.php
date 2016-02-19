@@ -2,9 +2,19 @@
 
     class Count
     {
-        function countWord($sentence, $find)
+        function countWord($input_sentence, $input_find)
         {
-            return substr_count($sentence, $find);
+            $sentence = strtolower($input_sentence);
+            $find = strtolower($input_find);
+            $sentence = explode(" ", $sentence);
+            var_dump($sentence);
+            $matched_words = array();
+            foreach ($sentence as $word){
+                if ($word == $find){
+                    array_push($matched_words, $word);
+                }
+            }
+            return count($matched_words);
         }
     }
 ?>
