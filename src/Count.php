@@ -2,9 +2,9 @@
 
     class Count
     {
-        function countWord
+        function countWord($sentence, $find)
         {
-          
+
         }
     }
 ?>

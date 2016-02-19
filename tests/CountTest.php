@@ -7,14 +7,14 @@
         {
             // Arrange
             $test_Count = new Count;
-            $sentence =
-            $find =
+            $sentence = "fish";
+            $find = "fish";
 
             // Act
             $result = $test_Count->countWord($sentence, $find);
 
             // Assert
-            $this->assertEquals(, $result);
+            $this->assertEquals( 1, $result);
         }
       }
 ?>
