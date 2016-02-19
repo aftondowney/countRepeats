@@ -25,7 +25,7 @@ _As of 2/18/16 there are no none bugs but sentence length has not been accounted
 
 ## Technologies Used
 
-_This app was built in PHP using Silex and Twig._
+_This app was built in PHP using Silex, Twig and PHPUnit._
 
 ### License
 
