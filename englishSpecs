@@ -2,4 +2,6 @@
 
 2. This test will find a word that appears once in a multiple word string and output the number of times the specified word appears within the string. (input: fish and What a big fish., output: 1);
 
-3. This test will find a word that appears more than once in a multiple word string and output the number of times the specified word appears within the string. (input: fish and One fish two fish, red fish blue fish., output: 4);
+3. This test will find a word that appears more than once in a multiple word string and output the number of times the specified word appears within the string. (input: fish and One fish, two fish, red fish, blue fish., output: 4);
+
+4. This test will find all instances of a word in a string excluding any partial word matches and output the number of times the specified word appears within the string. (input: fish and One fish, two fish, red fisherman, blue fisherman., output: 2);
