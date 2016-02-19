@@ -16,5 +16,18 @@
             // Assert
             $this->assertEquals( 1, $result);
         }
+        function test_count_sentence()
+        {
+            // Arrange
+            $test_Count = new Count;
+            $sentence = "What a big fish.";
+            $find = "fish";
+
+            // Act
+            $result = $test_Count->countWord($sentence, $find);
+
+            // Assert
+            $this->assertEquals( 1, $result);
+        }
       }
 ?>
