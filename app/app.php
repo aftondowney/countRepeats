@@ -17,7 +17,7 @@
     $app->get("/find", function() use ($app){
         $new_sentence = new Count;
         $new_input = $new_sentence->countWord($_GET['sentence'], $_GET['find']);
-        return $app['twig']->render('index.html.twig', array('results' => $new_input, 'sentence' => $_GET['sentence']));
+        return $app['twig']->render('index.html.twig', array('results' => $new_input, 'sentence' => $_GET['sentence'], 'word' => $_GET['find']));
       });
 
     return $app;
