@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    {% include '/includes/head.html.twig' %}
+
+    <body>
+        <div class="container">
+            <h1>Word Counter</h1>
+            <p>
+                Write a sentence and then enter a word in that sentence and I will tell you how many times that word appears in the sentence.
+            </p>
+            <form action="/find">
+              <div class="form-group">
+                  <label for="sentence">Enter a sentence</label>
+                  <input type="text" id="sentence" name="sentence" class='form-control'><br>
+              </div>
+                <div class="form-group">
+                    <label for="find">Enter a word to be counted</label>
+                    <input type="text" id="find" name="find" class='form-control'><br>
+                </div>
+                <button class="btn btn-success" type="submit">Count the word!</button>
+            </form><br><br>
+            <div class="well">
+                <p>
+                    <ul>
+                            <li>{{ results }}</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
